@@ -1,0 +1,83 @@
+.Header {
+  background-color: #000;
+  color: white;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+
+  .logo {
+    width: 129px;
+    height: 51px;
+  }
+  .nav {
+    display: flex;
+    gap: 86px;
+
+    a {
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 23.16px;
+    }
+  }
+  .lang{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 168px;
+
+    p{
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 23.16px;
+      margin-left: 10px;
+      margin-right: 3px;
+    }
+    span{
+      margin-top: 3px;
+      transition: .3s ease-in-out;
+    }
+    .arrowUp{
+      rotate: 180deg;
+      margin-top: 0;
+    }
+    .menu{
+      position: absolute;
+      top: 41px;
+      width: 144px;
+      background-color: #fff;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 0 6px 5px;
+      z-index: 101;
+      overflow: hidden;
+
+      .menuItem{
+        display: flex;
+        padding: 10px 7px;
+        border-radius: 15px 0 0 15px;
+        width: 138px;
+        color: #000;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        
+        &:hover{
+          background-color: #DDDDDDBF;
+        }
+        p{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17.07px;
+        }
+      }
+    }
+  }
+}

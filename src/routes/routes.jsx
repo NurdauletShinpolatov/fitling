@@ -1,9 +1,9 @@
-import App from "../App";
+import Layout from "../layout/layout";
 
 const routes = [
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     id: "root",
     children: [
       // {
